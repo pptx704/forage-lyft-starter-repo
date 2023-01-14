@@ -4,7 +4,7 @@ from engine import CapuletEngine, WilloughbyEngine, SternmanEngine
 
 
 class TestCapuletEngine(unittest.TestCase):
-    def test_test_should_be_serviced(self):
+    def test_should_be_serviced(self):
         self.assertTrue(CapuletEngine(55000, 23000).needs_service())
         self.assertTrue(CapuletEngine(30001, 0).needs_service())
         self.assertTrue(CapuletEngine(120000, 45000).needs_service())
